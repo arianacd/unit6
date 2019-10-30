@@ -71,11 +71,37 @@ print(is_sorted(["c", "b"]))
 
 
 def remove_duplicates(nums):
-    for x in range(len(nums)):
-        for y in range(x + 1, len(nums)):
-            if nums[x] == nums[y]:
-                del y
-    return nums
+    removed = []
+    for x in nums:
+        if x not in removed:
+            removed.append(x)
+    return removed
 
 
-print(remove_duplicates([1, 2, 3, 4, 4, 5, 6]))
+print(remove_duplicates([1, 1, 2, 3, 4, 4, 5, 6]))
+
+
+# ex. 7
+
+def get_max(nums):
+    maximum = nums[0]
+    for x in nums:
+        if x > maximum:
+            maximum = x
+    return maximum
+
+
+print(get_max([-123, -23, -4, -65]))
+
+# ex. 8
+
+
+def get_min(nums):
+    minimum = nums[0]
+    for x in nums:
+        if x < minimum:
+            minimum = x
+    return minimum
+
+
+print(get_min([-23, 4, 5]))
