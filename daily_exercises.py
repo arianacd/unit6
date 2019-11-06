@@ -1,4 +1,4 @@
-# by ariana daney
+# by Ariana Daney
 # first modified 10-25-19
 # unit 6 daily exercises
 
